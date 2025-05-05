@@ -1,43 +1,28 @@
 :root {
-    /* Base Colors */
-    --color-mint: #8fdac1;        /* Darker mint for better contrast */
-    --color-light-pink: #f8eded; 
-    --color-lavender: #d9b3d0;    
-    --color-mauve: #c191b1;       /* Darker mauve for better contrast */
-    
-    /* Text Colors */
-    --text-dark: #333333;         /* Dark text for light backgrounds */
-    --text-light: #f8f8f8;        /* Light text for dark backgrounds */
-    
-    /* Additional Colors for better contrast */
-    --mint-dark: #5ca18b;         
-    --lavender-dark: #9a6589;   
-    --mauve-dark: #8e5980;        
-    
+    --color-mint: #caf7e3;
+    --color-light-pink: #f8eded;
+    --color-lavender: #f6dfed;
+    --color-mauve: #e4bad4;
+    --text-dark: #333;
+    --text-light: #f8f8f8;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dark-mode {
+}
+
+.dark-mode {
     --bg-primary: #1a1a1a;
     --bg-secondary: #2d2d2d;
     --text-primary: var(--color-light-pink);
-    --text-secondary: var(--color-mint);
     --accent-color: var(--color-mauve);
-    --accent-hover: var(--color-lavender);
     --card-bg: #333;
-    --border-color: var(--color-mauve);
-  }
-  
-  .light-mode {
-    --bg-primary: #ffffff;        /* Pure white background */
-    --bg-secondary: var(--color-light-pink);
+}
+
+.light-mode {
+    --bg-primary: var(--color-light-pink);
+    --bg-secondary: var(--color-mint);
     --text-primary: var(--text-dark);
-    --text-secondary: var(--mauve-dark);
-    --accent-color: var(--mauve-dark);
-    --accent-hover: var(--lavender-dark);
-    --card-bg: #ffffff;           /* White cards */
-    --border-color: var(--color-mauve);
-  }
+    --accent-color: var(--color-lavender);
+    --card-bg: white;
+}
 
 * {
     margin: 0;
@@ -90,6 +75,7 @@ nav ul {
     list-style: none;
     gap: 2rem;
 }
+
 
 nav a {
     color: var(--text-primary);
